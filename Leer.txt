@@ -1,0 +1,20 @@
+ dar formato(cadena){
+                let aMayuscula = cadena.replace(/[ÁÀÄÂ]/g,'A');
+                let aMinuscula = aMayuscula.replace(/[áàäâ]/g,'a');
+                let eMayuscula = aMinuscula.replace(/[ÉÈËÊ]/g,'E');
+                let eMinuscula = eMayuscula.replace(/[éèëê]/g,'e');
+                let iMayuscula = eMinuscula.replace(/[ÍÌÏÎ]/g,'I');
+                let iMinuscula = iMayuscula.replace(/[íìïî]/g,'i');
+                let oMayuscula = iMinuscula.replace(/[ÓÒÖÔ]/g,'O');
+                let oMinuscula = oMayuscula.replace(/[óòöô]/g,'o');
+                let uMayuscula = oMinuscula.replace(/[ÚÙÜÛ]/g,'U');
+                let uMinuscula = uMayuscula.replace(/[úùüû]/g,'u');
+                let enieMayuscula = uMinuscula.replace(/[Ñ]/g,'N');
+                let enieMinuscula = enieMayuscula.replace(/[ñ]/g,'n');
+                let resultadoFinal = enieMinuscula.replace(/['|°¬!^`~"#$%&/()Çç=?¿{}_,.´+<>¡¨*:;]/gi,'');
+
+                return resultadoFinal;
+            }
+Intente colocar esto en el codigo ,cambie algunas cosas del codigo que dieron el live para hacer el challenge y lo mejore un poco me faltaria solamente sin acentos y tildes pero intente pero no pude, del
+paso del curso voy a mejorar el encriptador.
+Gracias por leer.
